@@ -13,9 +13,7 @@ app.set("port", 4200);
 
 //middlewares
 app.use(express.json());//Pases incoming JSON requests and puts it in req
-app.use(cors({
-    origin: "https://master.d3borfj6pc5k7s.amplifyapp.com"
-}));
+app.use(cors());
 
 
 //routes
