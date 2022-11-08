@@ -15,9 +15,11 @@ app.set("port", 4200);
 app.use(express.json());//Pases incoming JSON requests and puts it in req
 app.use(cors());
 
+app.options("/user/findUser", cors());
+
 
 //routes
-app.use("/user",userRouter);
+app.use("/user", userRouter);
 app.use("/game", gameRouter);
 app.use("/team", teamRouter);
 app.use("/stadium", stadiumRouter);
