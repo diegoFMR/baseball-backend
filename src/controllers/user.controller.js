@@ -25,7 +25,7 @@ const findUser = async (req, res) => {
 		const emailQuery = "SELECT user.user_id, user.name, email, password, team.team_id as team_id, team.name as teamName "
 		+", team.local_stadium FROM user INNER JOIN team ON user.team_id = team.team_id "+
 		"WHERE user.email ='"+email+"'";
-
+		
 		const connection = await connect.getConnection();
 
 		connection.query(emailQuery, function(errors, rows, field){	
@@ -66,6 +66,7 @@ const findUser = async (req, res) => {
 		});//connection.query end
 		return;
 	}catch (error) {
+		console.log(error)
 		res.status(500);
 		res.json([])
 	}
