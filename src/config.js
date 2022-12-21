@@ -3,8 +3,8 @@ import { config } from "dotenv";
 config();
 
 export default {
-    host: "sql9.freesqldatabase.com",
-    database: "sql9551009",
-    user: "sql9551009",
-    password: "Z9EQsvNDKg"
+    host: "sql.freedb.tech",
+    database: "freedb_baseball",
+    user: "freedb_diego",
+    password: "Te82dxyn7r&k5nw"
 };
