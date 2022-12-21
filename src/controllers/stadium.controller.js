@@ -21,6 +21,8 @@ const listStadium = async (req, res) => {
 		}
 
 	}catch (error) {
+		console.log('right here---------------------------------');
+		console.log(error);
 		res.status(500);
 		res.json([])
 	}
