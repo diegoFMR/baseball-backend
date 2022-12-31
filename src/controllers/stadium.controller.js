@@ -19,7 +19,6 @@ const listStadium = async (req, res) => {
 			res.status(404);
 			res.json([]);
 		}
-		connected.release();
 	}catch (error) {
 		console.log(error);
 		res.status(500);

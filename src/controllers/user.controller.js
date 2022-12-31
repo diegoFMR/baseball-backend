@@ -46,12 +46,10 @@ const findUser = async (req, res) => {
 
 							res.status(200);
 							res.json(rows);
-							connection.release();
 						}else{
 
 							res.status(404);
 							res.json([]);
-							connection.release();
 						}
 						return;
 					});//bscript.compare ends
