@@ -26,6 +26,7 @@ const findNextGameByTeam = async (req, res) => {
 		}
 
 	}catch (error) {
+		console.log(error);
 		res.status(500);
 		res.json([])
 	}
@@ -48,6 +49,7 @@ const createMatch = async (req, res) => {
 
 		res.json(result);
 	}catch (error) {
+		console.log(error);
 		res.status(500);
 	}
 };
@@ -67,6 +69,7 @@ const updateMatch = async (req, res) => {
 
 		res.json(result);
 	}catch (error) {
+		console.log(error);
 		res.status(500);
 		res.json({});
 	}
@@ -87,6 +90,7 @@ const deleteMatch = async (req, res) => {
 
 		res.json(result);
 	}catch (error) {
+		console.log(error);
 		res.status(500);
 		res.json({});
 	}

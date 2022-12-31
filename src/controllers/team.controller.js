@@ -20,6 +20,7 @@ const listTeams = async (req, res) => {
 			res.json([]);
 		}
 	}catch (error) {
+		console.log(error);
 		res.status(500);
 		res.json([])
 	}
